@@ -1,0 +1,33 @@
+cache: coisas previamente salvas do computador para ajudar a carregar os sites mais rápido.
+crack: chave falsa.
+gif/png: aceita transparência.
+jpg: fotos de peso menor.
+host: espécie de servidor.
+http: protocolo da internet.
+link: é a ligação entre a url e a mensagem, por exemplo.
+url: endereço de um site.
+login: acesso a um sistema.
+logout: sai do sistema.
+multimídia: o sistema permite que execute diversos tipos de mídia ao mesmo tempo.
+nick: apelido.
+online/offline: estar disponível. Estar indisponível.
+pixel: picture + element. É responsável por um elemento da imagem.
+spam: e-mail massivo.
+vírus: software malicioso com intenção de prejudicar seu pc ou usuário.
+keylogger: é uma espécie de virus que capta tudo que você digita no teclado.
+phishing: vírus com a intenção de roubar dados enganando outra pessoa.
+backup: cópia de segurança dos dados.
+cookies: pequenos registros de nossas atividades que podem ser usados por outros sites.
+firewall: impedir acesso indevido.
+ip: endereço de um computador.
+click bait: notícia feita para você clicar nele.
+
+
+Debug: tentar descobrir o problema ou passar o programa para descobrir a falha.
+Deploy: pacotinho enviado para publicação.
+DPI: proporção de pontos na tela.
+FTP: protocolo de comunicação para troca de arquivos.
+Versão: versionamento de padrão. Número antes do ponto = mudança grande. Número depois do ponto = mudança pequena.
+WYSIWYG: what you see, what you get. Pequenos editores de texto embutidos no site.
+
+
