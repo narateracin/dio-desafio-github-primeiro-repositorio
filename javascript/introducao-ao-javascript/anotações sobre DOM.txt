@@ -1,0 +1,8 @@
+document.getElementsByTagName('h1')
+-> retorna HTMLColletion[h1] > dar enter
+
+var heading1 = document.getElementsByTagName('h1')[0]
+-> dar enter e ele vai retornar o que há no heading1, que no caso é "Olá, mundo!"
+
+heading1.style.color = 'red'
+-> dar enter e muda a cor do texto.
