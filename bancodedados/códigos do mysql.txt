@@ -1,0 +1,50 @@
+CREATE TABLE pessoas {
+	id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+	nome VARCHAR(30) NOT NULL,
+	nascimento DATE
+}
+
+
+INSERT INTO pessoas (nome, nascimento) VALUES ('Nathaly', '1998-05-01')
+
+
+SELECT * FROM pessoas -> retorna todos os dados da tabela pessoas
+SELECT nome, nascimento FROM pessoas -> retorna só os campos nome e nascimento da tabela pessoas.
+SELECT * FROM pessoa ORDER BY nome -> ordena de maneira crescente
+SELECT * FROM pessoa ORDER BY nome DESC -> ordena de maneira decrescente
+
+
+UPDATE pessoa SET nome='Nathaly Souza' -> muda todos os valores de nome para o valor.
+UPDATE pessoa SET nome='Pedro' WHERE id=2 -> muda o nome só no id 2.
+
+
+DELETE FROM pessoas WHERE id=1
+
+ALTER TABLE 'pessoa' ADD 'genero' VARCHAR(1) NOT NULL AFTER 'nascimento'; -> para alterar a tabela
+
+SELECT COUNT(id), genero FROM pessoa GROUP BY genero; -> contou os elementos que tem genero igual
+
+
+------
+SELECT * FROM videos_canais JOIN videos ON videos_canais.fk_video = videos.id_video
+
+SELECT * FROM videos_canais as vc JOIN videos as v ON vc.fk_video = v.id_video -> resumindo o nome de tabelas
+
+
+SELECT * FROM videos_canais as vc JOIN videos as v ON vc.fk_video = v.id_video JOIN canais AS c ON vc.fk.canal = c.id_canal
+
+SELECT v.nome_video, v.autor_video, c.nome_canal FROM videos_canais as vc JOIN videos as v ON vc.fk_video = v.id_video JOIN canais AS c ON vc.fk.canal = c.id_canal
+
+esse join é o equivalente ao INNER JOIN. Não vai trazer campos que não tenham relacionamento ou nulos.
+------
+a clausula OUTER JOIN traz todos os campos.
+primeira tabela sempre a esquerda. A segunda tabela sempre a direita e assim por diante.
+
+SELECT * FROM videos_canais AS vc LEFT OUTER JOIN videos AS v ON vc.fk_video = v.id_video
+
+SELECT * FROM videos_canais AS vc RIGHT OUTER JOIN videos AS v ON vc.fk_video = v.id_video
+
+SELECT * FROM videos_canais JOIN videos ON videos_vanais.fk_video = videos.id_video
+JOIN canais ON videos_canais.fk_canal = canais.id_canal
+WHERE canais.id_canal = 2
+
